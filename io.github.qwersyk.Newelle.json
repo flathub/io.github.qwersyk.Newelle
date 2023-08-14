@@ -9,7 +9,10 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
-        "--socket=wayland"
+        "--socket=wayland",
+        "--talk-name=org.freedesktop.Flatpak",
+        "--filesystem=home",
+        "--socket=pulseaudio"
     ],
     "cleanup" : [
         "/include",
@@ -31,8 +34,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qwersyk/Newelle.git",
-                    "tag": "0.1.7",
-                    "commit": "a57ecbd9c796d6e0bc536eca0c4cd1a38b570391"
+                    "tag": "v0.2.0-alpha",
+                    "commit": "b4d930fa020f50ef57cced139a89ab345bee7568"
                 }
             ]
         }
