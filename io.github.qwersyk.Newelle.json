@@ -31,8 +31,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qwersyk/Newelle.git",
-                    "tag": "0.1.7",
-                    "commit": "a57ecbd9c796d6e0bc536eca0c4cd1a38b570391"
+                    "tag": "v0.2.0-alpha",
+                    "commit": "ec19973ae7b1653633701f897993511ea93b40d8"
                 }
             ]
         }
