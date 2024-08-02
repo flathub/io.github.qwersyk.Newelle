@@ -4,6 +4,7 @@
     "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "newelle",
+    "only-arches": ["x86_64"],
     "finish-args" : [
         "--share=network",
         "--share=ipc",
