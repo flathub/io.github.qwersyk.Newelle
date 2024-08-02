@@ -39,6 +39,7 @@
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [
+		{
                     "type" : "git",
                     "url" : "https://github.com/qwersyk/Newelle.git",
                     "tag": "0.2.0",
