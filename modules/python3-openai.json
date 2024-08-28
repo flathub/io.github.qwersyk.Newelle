@@ -2,9 +2,26 @@
     "name": "python3-openai",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"openai==1.41.0\" --no-build-isolation"
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"setuptools_rust\" --no-build-isolation",
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"maturin\" --no-build-isolation",
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"openai==1.42.0\" --no-build-isolation"
     ],
     "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/6a/23/8146aad7d88f4fcb3a6218f41a60f6c2d4e3a72de72da1825dc7c8f7877c/semantic_version-2.10.0-py2.py3-none-any.whl",
+            "sha256": "de78a3b8e0feda74cabc54aab2da702113e33ac9d9eb9d2389bcf1f58b7d9177"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/43/3c/434984fca14c73e16a763f59424f06051758a01bb4d19e3f6470693790be/setuptools_rust-1.10.1-py3-none-any.whl",
+            "sha256": "3837616cc0a7705b2c44058f626c97f774eeb980f28427c16ece562661bc20c5"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/1d/ec/1f688d6ad82a568fd7c239f1c7a130d3fc2634977df4ef662ee0ac58a153/maturin-1.7.1.tar.gz",
+            "sha256": "147754cb3d81177ee12d9baf575d93549e76121dacd3544ad6a50ab718de2b9c"
+        },
         {
             "type": "file",
             "url": "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl",
@@ -52,8 +69,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b6/62/940a75b447ffb607be7840df3602ba2c75b9a1504364d9837b187deacc33/openai-1.41.0-py3-none-any.whl",
-            "sha256": "3b6cca4571667f3e0800442ef8f2bfa6a6f3301c51776bc7626159a4d81c242c"
+            "url": "https://files.pythonhosted.org/packages/cf/9e/d77569d06e365f093977d94f305a395b7ac5ccd746016a2e8dd34c4e20c1/openai-1.42.0-py3-none-any.whl",
+            "sha256": "dc91e0307033a4f94931e5d03cc3b29b9717014ad5e73f9f2051b6cb5eda4d80"
         },
         {
             "type": "file",
