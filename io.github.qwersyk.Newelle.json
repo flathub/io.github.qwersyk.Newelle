@@ -1,7 +1,7 @@
 {
     "app-id" : "io.github.qwersyk.Newelle",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "46",
+    "runtime-version" : "47",
     "sdk" : "org.gnome.Sdk",
     "command" : "newelle",
     "finish-args" : [
@@ -43,8 +43,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/qwersyk/Newelle.git",
-                    "tag": "0.3.0",
-                    "commit": "9ee386bf1d8e2ecd5aef8646b2cc643d05114ea6"
+                    "tag": "0.3.1",
+                    "commit": "9dad436f711b53095ccf951c69cf650c7d23dfe2"
                 }
             ]
         }
