@@ -34,6 +34,8 @@
     "modules/python3-pyaudio.json",
     "modules/python3-speechrecognition.json",
     "modules/python3-pygame.json",
+    "modules/python3-pillow.json",
+    "modules/python3-curl_cffi.json",
     {
       "name": "newelle",
       "builddir": true,
