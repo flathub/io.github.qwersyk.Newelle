@@ -1,52 +1,50 @@
 {
-    "app-id" : "io.github.qwersyk.Newelle",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "newelle",
-    "finish-args" : [
-        "--share=network",
-        "--share=ipc",
-        "--socket=fallback-x11",
-        "--device=dri",
-        "--socket=wayland",
-        "--socket=pulseaudio"
-    ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
-    "modules" : [
-        "modules/python3-requests.json",
-        "modules/python3-expandvars.json",
-        "modules/python3-curl_cffi.json",
-        "modules/python3-g4f.json",
-        "modules/python3-gpt4all.json",
-        "modules/python3-gtts.json",
-        "modules/python3-pip.json",
-        "modules/portaudio.json",
-        "modules/python3-pyaudio.json",
-        "modules/python3-pydub.json",
-        "modules/python3-speechrecognition.json",
+  "app-id": "io.github.qwersyk.Newelle",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "47",
+  "sdk": "org.gnome.Sdk",
+  "command": "newelle",
+  "finish-args": [
+    "--share=network",
+    "--share=ipc",
+    "--socket=fallback-x11",
+    "--device=dri",
+    "--socket=wayland",
+    "--socket=pulseaudio"
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/man",
+    "/share/doc",
+    "/share/gtk-doc",
+    "/share/man",
+    "/share/pkgconfig",
+    "*.la",
+    "*.a"
+  ],
+  "modules": [
+    "modules/python3-requests.json",
+    	"modules/python3-expandvars.json",
+    	"modules/python3-gpt4all.json",
+    	"modules/python3-gtts.json",
+    	"modules/python3-pip.json",
+    	"modules/portaudio.json",
+    	"modules/python3-pyaudio.json",
+	   "modules/python3-speechrecognition.json",
+      "modules/python3-pygame.json",
+    {
+      "name": "newelle",
+      "builddir": true,
+      "buildsystem": "meson",
+      "sources": [
         {
-            "name" : "newelle",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/qwersyk/Newelle.git",
-                    "tag": "0.3.1",
-                    "commit": "9dad436f711b53095ccf951c69cf650c7d23dfe2"
-                }
-            ]
+          "type": "git",
+          "url": "https://github.com/qwersyk/Newelle.git",
+          "tag": "0.4.0",
+          "commit": "7ed4162006b1fc93611756d9feceda41c24a0364"
         }
-    ]
+      ]
+    }
+  ]
 }
