@@ -1,0 +1,10 @@
+requests
+expandvars
+curl_cffi
+pillow
+g4f==0.3.3.3
+gtts
+pyaudio
+speechrecognition
+openai
+pygame
