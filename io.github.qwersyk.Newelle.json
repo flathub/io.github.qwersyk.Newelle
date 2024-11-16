@@ -25,14 +25,13 @@
   ],
   "modules": [
     "modules/python3-requests.json",
-    	"modules/python3-expandvars.json",
-    	"modules/python3-gpt4all.json",
-    	"modules/python3-gtts.json",
-    	"modules/python3-pip.json",
-    	"modules/portaudio.json",
-    	"modules/python3-pyaudio.json",
-	   "modules/python3-speechrecognition.json",
-      "modules/python3-pygame.json",
+    "modules/python3-expandvars.json",
+    "modules/python3-gpt4all.json",
+    "modules/python3-gtts.json",
+    "modules/portaudio.json",
+    "modules/python3-pyaudio.json",
+    "modules/python3-speechrecognition.json",
+    "modules/python3-pygame.json",
     {
       "name": "newelle",
       "builddir": true,
@@ -41,8 +40,8 @@
         {
           "type": "git",
           "url": "https://github.com/qwersyk/Newelle.git",
-          "tag": "0.4.0",
-          "commit": "7ed4162006b1fc93611756d9feceda41c24a0364"
+          "tag": "0.4.1",
+          "commit": "7ed025c7f28089c7fd78c789fa32ce63eec8372c"
         }
       ]
     }
