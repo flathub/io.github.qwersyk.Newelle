@@ -26,7 +26,6 @@
   "modules": [
     "modules/python3-requests.json",
     "modules/python3-expandvars.json",
-    "modules/python3-gpt4all.json",
     "modules/python3-gtts.json",
     "modules/portaudio.json",
     "modules/python3-pyaudio.json",
@@ -40,8 +39,8 @@
         {
           "type": "git",
           "url": "https://github.com/qwersyk/Newelle.git",
-          "tag": "0.5.0",
-          "commit": "4e0f9c1cf418ae10a3b5ff1850465159dcff31b0"
+          "tag": "0.5.0-aarch64",
+          "commit": "5cf9df33048062fbc8335b16f009d8f9104e6bd0"
         }
       ]
     }
