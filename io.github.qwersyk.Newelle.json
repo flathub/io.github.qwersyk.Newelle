@@ -33,6 +33,9 @@
     "modules/python3-pyaudio.json",
     "modules/python3-speechrecognition.json",
     "modules/python3-pygame.json",
+    "modules/python3-pillow.json",
+    "modules/python3-matplotlib.json",
+    "modules/python3-pylatexenc.json",
     {
       "name": "newelle",
       "builddir": true,
@@ -41,8 +44,8 @@
         {
           "type": "git",
           "url": "https://github.com/qwersyk/Newelle.git",
-          "tag": "0.6.0",
-          "commit": "b6cf58174f36169b676fe68f7880b068a040337b"
+          "tag": "0.7.0",
+          "commit": "986f1caab1fc60e17677d97a082a840e4a275f0b"
         }
       ]
     }
