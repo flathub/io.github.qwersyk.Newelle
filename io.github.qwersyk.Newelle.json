@@ -40,6 +40,7 @@
     "modules/python3-lxml.json",
     "modules/python3-lxml_html_clean.json",
     "modules/python3-newspaper3k.json",
+    "modules/python3-markdownify.json",
     {
       "name": "newelle",
       "builddir": true,
@@ -48,8 +49,8 @@
         {
           "type": "git",
           "url": "https://github.com/qwersyk/Newelle.git",
-          "tag": "0.9.8",
-          "commit": "c012451979794ba41b27cd6a28bafe390d187ce4"
+          "tag": "1.0.0",
+          "commit": "42bd5c548487b679e6ee6a4fd0361c47dc6f933c"
         }
       ]
     }
