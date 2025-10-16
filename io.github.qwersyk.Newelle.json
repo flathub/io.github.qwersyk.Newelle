@@ -1,58 +1,68 @@
 {
-  "app-id": "io.github.qwersyk.Newelle",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "48",
-  "sdk": "org.gnome.Sdk",
-  "command": "newelle",
-  "finish-args": [
-    "--share=network",
-    "--share=ipc",
-    "--socket=fallback-x11",
-    "--device=dri",
-    "--socket=wayland",
-    "--socket=pulseaudio",
-    "--talk-name=org.gnome.Shell.Screencast"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/gtk-doc",
-    "/share/man",
-    "/share/pkgconfig",
-    "*.la",
-    "*.a"
-  ],
-  "modules": [
-    "modules/vte.json",
-    "modules/python3-requests.json",
-    "modules/python3-expandvars.json",
-    "modules/python3-gpt4all.json",
-    "modules/python3-gtts.json",
-    "modules/portaudio.json",
-    "modules/python3-pyaudio.json",
-    "modules/python3-speechrecognition.json",
-    "modules/python3-pydub.json",
-    "modules/python3-pillow.json",
-    "modules/python3-matplotlib.json",
-    "modules/python3-pylatexenc.json",
-    "modules/python3-lxml.json",
-    "modules/python3-lxml_html_clean.json",
-    "modules/python3-newspaper3k.json",
-    "modules/python3-markdownify.json",
-    {
-      "name": "newelle",
-      "builddir": true,
-      "buildsystem": "meson",
-      "sources": [
+    "app-id" : "io.github.qwersyk.Newelle",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version" : "49",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "newelle",
+    "finish-args" : [
+        "--share=network",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--device=dri",
+        "--socket=wayland",
+        "--socket=pulseaudio",
+        "--talk-name=org.gnome.Shell.Screencast"
+    ],
+    "cleanup" : [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.la",
+        "*.a"
+    ],
+    "modules" : [
+    	"modules/git.json",
+        "modules/vte.json",
+        "modules/python3-requests.json",
+        "modules/python3-expandvars.json",
+        "modules/python3-gpt4all.json",
+        "modules/python3-gtts.json",
+        "modules/portaudio.json",
+        "modules/python3-pyaudio.json",
+        "modules/python3-speechrecognition.json",
+        "modules/python3-pydub.json",
+        "modules/python3-six.json",
+        "modules/python3-pillow.json",
+        "modules/python3-matplotlib.json",
+        "modules/python3-pylatexenc.json",
+        "modules/python3-lxml.json",
+        "modules/python3-lxml_html_clean.json",
+        "modules/python3-newspaper3k.json",
+        "modules/python3-markdownify.json",
+        "modules/python3-openai.json",
         {
-          "type": "git",
-          "url": "https://github.com/qwersyk/Newelle.git",
-          "tag": "1.0.1",
-          "commit": "c5cfc3f04731f1eb7ca79286da4922e301ddfd09"
+            "name" : "newelle",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "build-options" : {
+                "append-path" : "/usr/lib/sdk/llvm19/bin",
+                "prepend-ld-library-path" : "/usr/lib/sdk/llvm19/lib"
+            },
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url": "https://github.com/qwersyk/Newelle.git",
+                    "tag": "1.0.2",
+                    "commit": "f3d2ed7cef6df613b7ad99a87ab05d9021b63b5f"
+                }
+            ]
         }
-      ]
+    ],
+    "build-options" : {
+        "env" : {        }
     }
-  ]
 }
