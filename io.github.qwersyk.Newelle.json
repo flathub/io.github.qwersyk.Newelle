@@ -8,7 +8,7 @@
     "--share=network",
     "--share=ipc",
     "--socket=fallback-x11",
-    "--device=dri",
+    "--device=all",
     "--socket=wayland",
     "--socket=pulseaudio",
     "--talk-name=org.gnome.Shell.Screencast"
@@ -65,8 +65,8 @@
         {
           "type": "git",
           "url": "https://github.com/qwersyk/Newelle.git",
-          "tag": "1.3.7",
-          "commit": "ca0c9062762dec816825da49df6e390a38091fb4"
+          "tag": "1.4.0",
+          "commit": "3059a24e62d6e4823e60976daaa0ec4f6adcc259"
         }
       ]
     }
