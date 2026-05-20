@@ -7,14 +7,14 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b8722/llama-b8722-bin-ubuntu-vulkan-x64.tar.gz",
-            "sha256": "dbfe6848148cd09ebf0174fc5961848c5bb8edbf327b2bd7ce3088750317dd94",
+            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b9245/llama-b9245-bin-ubuntu-x64.tar.gz",
+            "sha256": "c9cf0c012b03bf16782778a8bb4f8de08bde6038fc167b8ecafc6e7ee476b46c",
             "only-arches": ["x86_64"]
         },
         {
             "type": "archive",
-            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b8722/llama-b8722-bin-ubuntu-vulkan-arm64.tar.gz",
-            "sha256": "a84db95c86e4eb8316615060bed321984de8ee0e1b5f55edb9bb8837d39badd8",
+            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b9245/llama-b9245-bin-ubuntu-arm64.tar.gz",
+            "sha256": "08bf685d91c8119768c3691917cef9197372a484b627012922455b130594bd8d",
             "only-arches": ["aarch64"]
         }
     ]
