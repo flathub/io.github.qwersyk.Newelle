@@ -10,8 +10,7 @@
     "--socket=fallback-x11",
     "--device=dri",
     "--socket=wayland",
-    "--socket=pulseaudio",
-    "--talk-name=org.gnome.Shell.Screencast"
+    "--socket=pulseaudio"
   ],
   "cleanup": [
     "/include",
@@ -25,6 +24,7 @@
     "*.a"
   ],
   "modules": [
+    "modules/gtk4-layer-shell.json",
     "modules/git.json",
     "modules/vte.json",
     "modules/python3-requests.json",
@@ -65,7 +65,7 @@
         {
           "type": "git",
           "url": "https://github.com/qwersyk/Newelle.git",
-          "commit": "2133f16c232df1b0b70334b93ba0f69e01e377a5"
+          "commit": "9a4a089d40b8c052dfb9b4d8042ed0fdcb375ce4"
         }
       ]
     }
